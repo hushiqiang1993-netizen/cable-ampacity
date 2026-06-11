@@ -1,0 +1,24 @@
+{
+  "name": "电缆载流量计算器",
+  "short_name": "载流量计算",
+  "description": "铜铝电缆载流量计算 - 基于国标 GB/T 16895.15",
+  "start_url": ".",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0a1628",
+  "theme_color": "#0d1b2a",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='100' fill='%230d1b2a'/><text x='256' y='310' text-anchor='middle' font-size='260' font-family='Arial'>⚡</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='38' fill='%230d1b2a'/><text x='96' y='118' text-anchor='middle' font-size='100' font-family='Arial'>⚡</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

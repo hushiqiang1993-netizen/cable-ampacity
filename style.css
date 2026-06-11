@@ -1,0 +1,297 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #0a1628;
+  color: #e0e6f0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  user-select: none;
+}
+
+.app {
+  max-width: 440px;
+  margin: 0 auto;
+  padding: 12px;
+}
+
+/* ===== 头部 ===== */
+.header {
+  text-align: center;
+  padding: 20px 12px 12px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #5a6e8a;
+  margin-top: 4px;
+}
+
+/* ===== 卡片 ===== */
+.card {
+  background: #111d32;
+  border-radius: 14px;
+  padding: 16px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.card-title {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7eb8ff;
+  margin-bottom: 14px;
+}
+
+/* ===== 表单 ===== */
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group:last-child {
+  margin-bottom: 0;
+}
+
+.form-group label {
+  display: block;
+  font-size: 13px;
+  color: #8899b4;
+  margin-bottom: 5px;
+}
+
+select {
+  width: 100%;
+  height: 42px;
+  background: #1a2942;
+  color: #e0e6f0;
+  border: 1px solid #2a3d5c;
+  border-radius: 10px;
+  padding: 0 12px;
+  font-size: 15px;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%238899b4'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  cursor: pointer;
+  outline: none;
+}
+
+select:focus {
+  border-color: #4a90d9;
+}
+
+/* ===== Toggle 组 ===== */
+.toggle-group {
+  display: flex;
+  gap: 8px;
+}
+
+.toggle-btn {
+  flex: 1;
+  height: 42px;
+  border: 2px solid #2a3d5c;
+  border-radius: 10px;
+  background: #1a2942;
+  color: #8899b4;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.toggle-btn.active {
+  background: #1e3a5f;
+  border-color: #4a90d9;
+  color: #ffffff;
+}
+
+/* ===== 输入 ===== */
+.input-with-unit {
+  display: flex;
+  align-items: center;
+  background: #1a2942;
+  border: 1px solid #2a3d5c;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.input-with-unit input {
+  flex: 1;
+  height: 42px;
+  background: transparent;
+  border: none;
+  color: #e0e6f0;
+  font-size: 15px;
+  padding: 0 12px;
+  outline: none;
+  min-width: 0;
+}
+
+.input-with-unit input::placeholder {
+  color: #4a5e7a;
+}
+
+.input-with-unit .unit {
+  padding: 0 14px;
+  font-size: 14px;
+  color: #5a6e8a;
+  font-weight: 500;
+}
+
+.input-with-unit:focus-within {
+  border-color: #4a90d9;
+}
+
+/* ===== 结果卡片 ===== */
+.result-card {
+  background: linear-gradient(135deg, #111d32 0%, #0f1d38 100%);
+  border: 1px solid rgba(74, 144, 217, 0.15);
+}
+
+.result-main {
+  text-align: center;
+  padding: 16px 0 12px;
+}
+
+.result-label {
+  font-size: 13px;
+  color: #5a6e8a;
+  margin-bottom: 6px;
+}
+
+.result-value {
+  font-size: 52px;
+  font-weight: 300;
+  color: #4a90d9;
+  letter-spacing: -1px;
+}
+
+.result-note {
+  font-size: 12px;
+  color: #5a6e8a;
+  margin-top: 4px;
+}
+
+.result-details {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 12px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 0;
+  font-size: 13px;
+}
+
+.detail-row span:first-child {
+  color: #6a7e9a;
+}
+
+.detail-row span:last-child {
+  color: #c0d0e8;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  font-family: "SF Mono", "Consolas", monospace;
+}
+
+/* ===== 电压降 ===== */
+.voltage-section {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding-top: 12px;
+  margin-top: 4px;
+}
+
+/* ===== 速查表 ===== */
+.table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 0 -4px;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 220px;
+}
+
+thead th {
+  background: #1a2942;
+  color: #7eb8ff;
+  font-weight: 600;
+  padding: 10px 8px;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+thead th:first-child {
+  border-radius: 8px 0 0 0;
+}
+
+thead th:last-child {
+  border-radius: 0 8px 0 0;
+}
+
+tbody td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+  color: #c0d0e8;
+  font-variant-numeric: tabular-nums;
+  font-family: "SF Mono", "Consolas", monospace;
+}
+
+tbody tr.highlight {
+  background: rgba(74, 144, 217, 0.12);
+}
+
+tbody tr.highlight td {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.015);
+}
+
+.table-note {
+  font-size: 11px;
+  color: #4a5e7a;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* ===== 页脚 ===== */
+.footer {
+  text-align: center;
+  padding: 16px 12px 24px;
+  font-size: 11px;
+  color: #3a4e6a;
+}
+
+/* ===== 小屏适配 ===== */
+@media (max-width: 380px) {
+  .app { padding: 8px; }
+  .card { padding: 12px; }
+  .header h1 { font-size: 19px; }
+  .result-value { font-size: 42px; }
+  select, .toggle-btn { height: 38px; font-size: 14px; }
+  .input-with-unit input { height: 38px; }
+}
