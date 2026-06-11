@@ -22,5 +22,5 @@
 浏览器直接打开 `index.html`，或访问 GitHub Pages：
 
 ```
-https://<username>.github.io/cable-ampacity/
+https://hushiqiang1993-netizen.github.io/cable-ampacity/
 ```
